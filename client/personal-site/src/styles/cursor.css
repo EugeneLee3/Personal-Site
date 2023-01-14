@@ -1,0 +1,10 @@
+.cursor {
+    background-color: white;
+    height: 2.6vh;
+    width: 2.6vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }

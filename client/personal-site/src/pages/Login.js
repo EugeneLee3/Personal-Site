@@ -4,21 +4,29 @@ import { Link } from 'react-router-dom'
 import '../styles/project_display.css'
 
 function Login() {
+
   return (
     <div className="test">
       <h1>Login</h1>
 
-        <input
-          required
-          type="text"
-          placeholder="username"
-        />
+        <form className="test">
+          <input id="username"
+            required
+            type="text"
+            placeholder="username"
+          />
 
-        <input
-          required
-          type="password"
-          placeholder="password"
-        />
+          <input id="password"
+            required
+            type="password"
+            placeholder="password"
+          />
+        </form>
+
+        <script>
+          const getUsername = document.getElementById('username')
+          const getPassword = document.getElementById('password')
+        </script>
 
         <button>Login</button>
         <span>

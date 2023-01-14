@@ -1,0 +1,47 @@
+@font-face {
+    src: url(../assets/fonts/LEMONMILK-Regular.otf);
+    font-family: font;
+}
+
+.landing-container {
+    padding-top: 20vh;
+    align-items: center;
+    max-width: 45vw;
+    min-width: 45vw;
+    white-space: nowrap;
+}
+
+.info-row {
+    padding: 1.5vh;
+}
+.info-row button {
+    margin: 0.75vh;
+    background-color: transparent;
+    border: none;
+}
+
+.inline-title {
+    font-family: font;
+    padding: 1vh;
+    margin: 2vh;
+    font-size: 5vh;
+    letter-spacing: 0.2vw;
+    transition: all .2s linear; 
+}
+
+.animated-text {
+    display: inline-block;
+}
+.animated-text:hover {
+    transform: scale(1.2);
+}
+
+.small-title {
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+
+.desc-text {
+    align-items: center;
+    font-size: 16px;
+}

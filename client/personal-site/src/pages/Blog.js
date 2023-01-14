@@ -7,9 +7,7 @@ import '../styles/project_display.css'
 function Blog() {
   return (
     <div className="test">
-      <div>Blog</div>
-      <Login />
-      <BlogPost />
+      <div>COMING SOON</div>
     </div>
   )
 }

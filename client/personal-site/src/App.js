@@ -1,20 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
 import FadeIn from 'react-fade-in';
+import { useState  } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Home from './pages/Home'
 import Projects from './pages/Projects'
-import Resume from './pages/Resume'
-import Blog from './pages/Blog'
-import Login from './pages/Login';
-import Register from './pages/Register';
+import ContactMe from './pages/ContactMe';
+// import Blog from './pages/Blog'
+// import Login from './pages/Login';
+// import Register from './pages/Register';
 import NotFound from './pages/NotFound';
+// import ProjectDisplay from './pages/ProjectDisplay';
+import Experience from './pages/Experience'
+import UILoader from './helpers/UILoader';
+import LandingPage from './pages/LandingPage';
+import Cursor from './components/Cursor';
 
-import Navbar from './components/Navbar';
-import ProjectDisplay from './pages/ProjectDisplay';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,26 +33,31 @@ function App() {
   return (
     !loading && (
       <FadeIn>
-        <div className="App">
-          <div className="blur-border">
-            <Router>
 
-              <Navbar />
+        <Cursor />
 
-              <Routes>
-                <Route path='*' element={<NotFound />}/>
-                <Route exact path="/" element={<Home />} />
-                <Route exact path="/login" element={<Login />} />
-                <Route exact path="/register" element={<Register />} />
-                <Route exact path="/projects" element={<Projects />} />
-                <Route exact path="/projects/:id" element={<ProjectDisplay />} />
-                <Route exact path="/resume" element={<Resume />} />
-                <Route exact path="/blog" element={<Blog />} />
-              </Routes>
+      <div className="App">
+        <div className="blur-border">
+          <div className="main-content">
 
-            </Router>
+              <BrowserRouter>
+                <Routes>
+
+                <Route exact path="/" element={<UILoader/>}>
+                  <Route index element={<LandingPage />} />
+                  <Route exact path="/experience" element={<Experience />} />
+                  <Route exact path="/projects" element={<Projects />} />
+                  <Route exact path="/contact" element={<ContactMe />} />
+                  <Route path="*" element={<NotFound />}/>
+                </Route>
+                 
+                </Routes>
+              </BrowserRouter>
+            
           </div>
         </div>
+      </div>
+      
       </FadeIn>
     )
   );

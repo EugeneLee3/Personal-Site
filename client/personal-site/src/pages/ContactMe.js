@@ -1,12 +1,10 @@
 import React from 'react'
 
-import '../styles/home.css'
-
 import LinkinInIcon from "@material-ui/icons/LinkedIn"
 import EmailIcon from "@material-ui/icons/Email"
 import GithubIcon from "@material-ui/icons/GitHub"
 
-function Home() {
+function ContactMe() {
   return (
     <div>
       <div class="container">
@@ -32,4 +30,4 @@ function Home() {
   )
 }
 
-export default Home
+export default ContactMe

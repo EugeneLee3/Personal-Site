@@ -2,27 +2,33 @@ import img1 from '../assets/img1.png';
 
 export const ProjectList = [
     {
-        name: "test1",
-        image: img1
+        name: "Warren (In Progress)",
+        image: img1,
+        desc: "test",
+        gh_link: "https://github.com/"
     },
     {
-        name: "test2",
-        image: img1
+        name: "Personal Site",
+        image: img1,
+        desc: "test",
+        gh_link: "https://github.com/"
     },
     {
-        name: "test3",
-        image: img1
+        name: "Mo Money",
+        image: img1,
+        desc: "test",
+        gh_link: "https://github.com/"
     },
     {
-        name: "test4",
-        image: img1
+        name: "NorthMasters",
+        image: img1,
+        desc: "test",
+        gh_link: "https://github.com/"
     },
     {
-        name: "test5",
-        image: img1
-    },
-    {
-        name: "test6",
-        image: img1
+        name: "COVID-19 Tracker",
+        image: img1,
+        desc: "test",
+        gh_link: "https://github.com/"
     }
 ]

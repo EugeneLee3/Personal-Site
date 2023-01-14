@@ -1,33 +1,41 @@
 .navbar {
     background: transparent;
-    position: absolute;
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+    z-index: 1;
+    width: 20vw;
   }
-  
-  .links {
-    width: 100%;
-    height: 100%;
+
+  .navbar nav {
+    top: 5vh;
+    left: 5vh;
+    position: fixed;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    flex-direction: column;
+    text-align: left;
   }
   
   .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
+    margin-top: 2.5vh;
+  }
+  .navbar a:hover {
+    text-decoration: line-through;
   }
   
   .toggleButton {
     width: 100%;
     height: 1vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    top: 4vh;
+    left: 4vh;
+    position: fixed;
   }
   
   .toggleButton svg {
-    font-size: 2.5vh;
+    font-size: 4vh;
   }
   .toggleButton button {
     background-color: transparent;
@@ -37,24 +45,39 @@
   }
   
   #open {
-    height: 0;
-    background-color: red;
+    height: 100%;
+    width: 100vw;
+    top: 1vh;
   }
   
   #open .links {
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 0;
+    justify-content: center;
   }
   
   #open a {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    margin-left: 5vh;
+  }
+
+  #open button {
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #open nav {
+    top: 5vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
   }
   
   @media only screen and (max-width: 900px) {
-    .navbar a {
-      width: 70px;
+    .navbar {
+      width: 20vw;
     }
   }
   
