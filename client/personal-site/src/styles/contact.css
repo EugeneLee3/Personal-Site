@@ -1,0 +1,47 @@
+.contact-button-row {
+    margin-top: 1.5vh;
+}
+.contact-button-row button{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    background-color: transparent;
+    border: none;
+    transition: 0.25s linear;
+}
+.contact-button-row button:hover{
+    transform: scale(1.25);
+}
+
+.download-button {
+    transition: 0.5s linear;
+    margin: 1em;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+}
+.download-button a{
+    text-decoration: none;
+    font-size: small;
+    color: #171717;
+    background-color: white;
+    padding: 0.5em;
+    border: none;
+}
+.download-button:hover{
+    transform: scale(1.05);
+}
+
+.contact-body {
+    min-width: 70vw;
+    background-color: #171717;
+    margin: 3vh;
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow: scroll;
+    position: relative;
+}
+
+.card-body {
+    overflow: hidden;
+    background-color: red;
+}

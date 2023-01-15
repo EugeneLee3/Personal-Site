@@ -4,17 +4,11 @@
 
 .App {
   text-align: center;
-  background-image: url();
   margin: 5vh;
   max-height: 90vh;
   min-height: 90vh;
-  max-width: 90vw;
-  min-width: 90vw;
+  max-width: 100vw;
   mix-blend-mode: difference;
-}
-
-.blur-border {
-  box-sizing: border-box;
 }
 
 .main-content {

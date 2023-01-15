@@ -4,11 +4,8 @@
 }
 
 .landing-container {
-    padding-top: 20vh;
+    padding-top: 24vh;
     align-items: center;
-    max-width: 45vw;
-    min-width: 45vw;
-    white-space: nowrap;
 }
 
 .info-row {
@@ -44,4 +41,8 @@
 .desc-text {
     align-items: center;
     font-size: 16px;
+}
+
+.word-inline {
+    display: inline-block;
 }

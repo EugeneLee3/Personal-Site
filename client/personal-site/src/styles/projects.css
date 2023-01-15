@@ -12,6 +12,11 @@
     font-size: 60px;
     font-weight: bolder;
   }
+
+  .subtitle {
+    margin-top: -2em;
+    font-size: 13px;
+  }
   
   .projectList {
     height: auto;

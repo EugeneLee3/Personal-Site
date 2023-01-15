@@ -29,7 +29,7 @@ function Navbar() {
         <nav class="nav flex-column">
             <Link to={"/"} class="nav-link">HOME.</Link>
             <Link to={"/projects"} class="nav-link">PROJECTS.</Link>
-            <Link to={"/experience"} class="nav-link">EXPERIENCES.</Link> 
+            {/* <Link to={"/experience"} class="nav-link">EXPERIENCES.</Link>  */}
             <Link to={"/contact"} class="nav-link">CONTACT.</Link>
             {/* <Link to={"/blog"} class="nav-link"> Blog </Link> */}
         </nav>

@@ -1,19 +1,16 @@
 import React from 'react'
 
 import Typewriter from '../components/Typewriter'
+import TextAnimated from '../components/TextAnimated'
 
 import LinkinInIcon from "@material-ui/icons/LinkedIn"
 import EmailIcon from "@material-ui/icons/Email"
 import GithubIcon from "@material-ui/icons/GitHub"
 
 import '../styles/landing_page.css'
-import TextAnimated from '../components/TextAnimated'
 
 function LandingPage() {
     const titles = [
-        "Eugene Lee",
-        "A Computer Engineering Student @ the University of Waterloo",
-        "A Programmer",
         "Testing this Site"
       ];
 
@@ -23,16 +20,20 @@ function LandingPage() {
 
         <div className="inline-title">
           <span>
-            <span className="animated-text"><TextAnimated letter="E"/></span>
-            <span className="animated-text"><TextAnimated letter="U"/></span>
-            <span className="animated-text"><TextAnimated letter="G"/></span>
-            <span className="animated-text"><TextAnimated letter="E"/></span>
-            <span className="animated-text"><TextAnimated letter="N"/></span>
-            <span className="animated-text"><TextAnimated letter="E"/></span>
-            <span className="animated-text"><TextAnimated letter=" "/></span>
-            <span className="animated-text"><TextAnimated letter="L"/></span>
-            <span className="animated-text"><TextAnimated letter="E"/></span>
-            <span className="animated-text"><TextAnimated letter="E"/></span>  
+            <span className="word-inline">
+              <span className="animated-text"><TextAnimated letter="E"/></span>
+              <span className="animated-text"><TextAnimated letter="U"/></span>
+              <span className="animated-text"><TextAnimated letter="G"/></span>
+              <span className="animated-text"><TextAnimated letter="E"/></span>
+              <span className="animated-text"><TextAnimated letter="N"/></span>
+              <span className="animated-text"><TextAnimated letter="E"/></span>
+              <span className="animated-text"><TextAnimated letter=" "/></span>
+            </span>
+            <span className="word-inline">
+              <span className="animated-text"><TextAnimated letter="L"/></span>
+              <span className="animated-text"><TextAnimated letter="E"/></span>
+              <span className="animated-text"><TextAnimated letter="E"/></span> 
+            </span> 
           </span>
         </div>
 

@@ -37,7 +37,6 @@ function App() {
         <Cursor />
 
       <div className="App">
-        <div className="blur-border">
           <div className="main-content">
 
               <BrowserRouter>
@@ -55,7 +54,6 @@ function App() {
               </BrowserRouter>
             
           </div>
-        </div>
       </div>
       
       </FadeIn>
