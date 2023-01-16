@@ -11,7 +11,9 @@ import '../styles/landing_page.css'
 
 function LandingPage() {
     const titles = [
-        "Testing this Site"
+        "Computer Engineering Student @ uWaterloo",
+        "Korean Canadian",
+        "Video Games & Anime Enjoyer"
       ];
 
 

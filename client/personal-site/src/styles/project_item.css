@@ -1,12 +1,12 @@
 .card-item {
-    padding: 1em;
+    padding: 2vh;
     text-align: left;
     min-width: 22vw;
     max-width: 22vw;
     min-height: 8vw;
     max-height: 8vw;
     background-color: #171717;
-    margin: 0.5em;
+    margin: 0.75vh;
     position: relative;
     transition: 0.25s linear;
 }
@@ -23,6 +23,7 @@
 
 .card-desc {
     font-size: 13px;
+    color: gray;
 }
 
 .card-desc-date {
@@ -43,8 +44,8 @@
 }
 
 .card-desc-text {
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
+    margin-top: 0.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .card-button button {
@@ -52,13 +53,13 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 0.5em;
-    right: 0.5em;
+    top: 0.5vh;
+    right: 0.5vh;
 }
 
 .card-desc-bottom {
     position: absolute;
-    bottom: 1em; 
+    bottom: 1vh; 
     font-size: 12px;
     color: darkgray;
 }

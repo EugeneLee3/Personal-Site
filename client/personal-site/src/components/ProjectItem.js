@@ -5,7 +5,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 
 import '../styles/project_item.css';
 
-function ProjectItem({ name, start_date, end_date, desc, gh_link, status, id }) {
+function ProjectItem({ name, technologies, desc, gh_link, status, id }) {
   // const navigate = useNavigate();
   return (
     <div className="card-item">
@@ -34,7 +34,7 @@ function ProjectItem({ name, start_date, end_date, desc, gh_link, status, id }) 
           </div>
           
           <div className="card-desc-bottom">
-            technologies: {desc}
+            technologies: {technologies}
           </div>
         </div>
 

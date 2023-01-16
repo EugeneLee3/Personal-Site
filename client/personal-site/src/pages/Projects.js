@@ -28,7 +28,7 @@ function Projects() {
       </div>
 
       <div className="subtitle">
-        <Typewriter titles="What I've been working on!" />
+        <Typewriter titles={["What I've Been Working On!", "For More Information Visit GitHub"]} />
       </div>
         
 
@@ -39,10 +39,9 @@ function Projects() {
             return <ProjectItem 
               id={index} 
               name={project.name} 
-              start_date={project.start_date}
-              end_date={project.end_date}
               status={project.status} 
               desc={project.desc} 
+              technologies={project.technologies}
               gh_link={project.gh_link}/>
           })}
         </div>

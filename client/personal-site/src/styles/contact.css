@@ -13,7 +13,7 @@
 }
 
 .download-button {
-    transition: 0.5s linear;
+    transition: 0.25s linear;
     margin: 1em;
     position: absolute;
     top: 5vh;
@@ -28,7 +28,7 @@
     border: none;
 }
 .download-button:hover{
-    transform: scale(1.05);
+    transform: scale(1.075);
 }
 
 .contact-body {
@@ -42,7 +42,34 @@
 
 .sticky-object {
     position: absolute;
-    top: 3vh;
-    right: 0;
     padding: 2em;
+}
+
+.contact-object {
+    background-color: #171717;
+    opacity: 0.85;
+    max-width: 30vw;
+    min-width: 30vw;
+    min-height: 35vw;
+    margin: 2vh;
+    position: absolute;
+}
+
+.content-title {
+    padding-top: 5vh;
+    padding-left: 5vh;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.content-text {
+    text-align: left;
+    padding-left: 5.5vh;
+    padding-top: 1.5vh;
+    font-size: 14px;
+}
+.content-text li {
+    padding-bottom: 2vh;
+    padding-right: 6vh;
 }

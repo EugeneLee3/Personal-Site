@@ -15,6 +15,10 @@
     margin: 0.75vh;
     background-color: transparent;
     border: none;
+    transition: 0.25s linear;
+}
+.info-row button:hover {
+    transform: scale(1.2);
 }
 
 .inline-title {

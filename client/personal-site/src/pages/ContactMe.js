@@ -8,12 +8,14 @@ import LinkinInIcon from "@material-ui/icons/LinkedIn"
 import EmailIcon from "@material-ui/icons/Email"
 import GithubIcon from "@material-ui/icons/GitHub"
 
-// import Background from '../assets/background.jpg';
+// import Fox from '../assets/fox.gif';
+// import Goose from '../assets/waterloogoose.gif';
+// import Error from '../assets/error.gif';
+import Background from '../assets/background1.png';
 
 import '../styles/contact.css';
 
 import Resume from '../assets/resume.pdf';
-import ContactCard from '../components/ContactCard';
 
 function ContactMe() {
   const subtitle_content = [
@@ -70,51 +72,109 @@ function ContactMe() {
 
       <div className="contact-body" >
 
-        <Parallax pages={3} ref={ ref } >
+        <Parallax pages={2.09} ref={ ref } >
 
           <ParallaxLayer 
             offset={0}
             speed={0}
-            factor={3}
+            factor={2.09}
             style={{
-              // backgroundImage: `url(${Background})`,
+              backgroundImage: `url(${Background})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}
           />
 
-          <ParallaxLayer 
-            sticky={{ start: 0.8, end: 2.7 }}
+          {/* <ParallaxLayer 
+            sticky={{ start: 0.3, end: 0.4 }}
             offset={0}
             speed={0.1}
-            factor={3}
           >
-            <div className="sticky-object">
-              HIHI
+            <div className="sticky-object" style={{ top: '0', left:'15vw'}}>
+              <img src={Fox} height={125} width={125}/>
             </div>
           </ParallaxLayer>
 
+          <ParallaxLayer 
+            sticky={{ start: 1, end: 1.1 }}
+            offset={0}
+            speed={0.2}
+          >
+            <div className="sticky-object" style={{ top: '0', right:'20vw'}}>
+              <img src={Goose} height={125} width={125}/>
+            </div>
+          </ParallaxLayer>
 
           <ParallaxLayer 
-            offset={0.1}
+            sticky={{ start: 1.3, end: 1.4 }}
+            offset={0}
+            speed={0.6}
+          >
+            <div className="sticky-object" style={{ bottom: '30vh', left:'15vw'}}>
+              <img src={Error} height={125} width={125}/>
+            </div>
+          </ParallaxLayer> */}
+
+
+          <ParallaxLayer 
+            offset={0}
             speed={0.35}
             setPosition={0}
           >
-            <ContactCard />
+            <div className="contact-object" style={{right: '3vh', top: '3vh'}}>
+              <div className="content-title">about me</div>
+              <div className="content-text">
+                <ul>
+                  <li>Currently a 1B Computer Engineering student at the University of Waterloo</li>
+                  <li>Korean-Canadian 🇰🇷 🇨🇦</li>
+                  <li>Aspires to work in NYC, Seattle or the Bay Area</li>
+                  <li>Enjoys lisitening to music, singing is a different story...</li>
+                  <li>Hopes to launch a successful startup</li>
+                </ul>
+              </div>
+            </div>
           </ParallaxLayer>
 
           <ParallaxLayer 
-            offset={1}
-            speed={0.25}
+            offset={0.75}
+            speed={0.5}
           >
-            <ContactCard />
-          </ParallaxLayer>
+             <div className="contact-object" style={{left: '3vh', top: '0'}}>
+              <div className="content-title">experience</div>
+              <div className="content-text">
+                <ul>
+                  <li>Seeking Coops For Summer 2023</li>
+                  <li>David Freedman Information Technology Award Winner @ Ursula Franklin Academy</li>
+                  <li>2020-2022 Programming Club Leader for High School</li>
+                  <li>Relevant Courses: </li>
+                  <ul>
+                    <li>[ECE 150] Fundamentals of Programming</li>
+                    <li>[ECE 124] Digital Circuits</li>
+                    <li>[MATH 115] Linear Algebra</li>
+                    <li>[MATH 117] Calculus I</li>
+                    <li>[MATH 119] Calculus II</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </ParallaxLayer >
 
           <ParallaxLayer 
-            offset={2}
-            speed={0.9}
+            offset={1.1}
+            speed={0.15}
           >
-              <ContactCard />
+            <div className="contact-object" style={{right: '3vh', bottom: '3vh'}}>
+              <div className="content-title">interests</div>
+              <div className="content-text">
+                <ul>
+                  <li>Technology</li>
+                  <li>Video Games</li>
+                  <li>Anime/K-Drama</li>
+                  <li>Machine Learning and AI</li>
+                  <li>Soccer & Basketball</li>
+                </ul>
+              </div>
+            </div>
           </ParallaxLayer>
 
         </Parallax>
