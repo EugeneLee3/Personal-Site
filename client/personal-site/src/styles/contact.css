@@ -33,15 +33,16 @@
 
 .contact-body {
     min-width: 70vw;
-    background-color: #171717;
     margin: 3vh;
-    min-height: 60vh;
-    max-height: 60vh;
+    min-height: 65vh;
+    max-height: 65vh;
     overflow: scroll;
     position: relative;
 }
 
-.card-body {
-    overflow: hidden;
-    background-color: red;
+.sticky-object {
+    position: absolute;
+    top: 3vh;
+    right: 0;
+    padding: 2em;
 }

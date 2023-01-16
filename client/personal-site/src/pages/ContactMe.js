@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import TextAnimated from '../components/TextAnimated'
 import Typewriter from '../components/Typewriter';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import LinkinInIcon from "@material-ui/icons/LinkedIn"
 import EmailIcon from "@material-ui/icons/Email"
 import GithubIcon from "@material-ui/icons/GitHub"
+
+// import Background from '../assets/background.jpg';
 
 import '../styles/contact.css';
 
@@ -14,8 +17,10 @@ import ContactCard from '../components/ContactCard';
 
 function ContactMe() {
   const subtitle_content = [
-    "Feel free to contact me!"
-  ]
+    "Feel Free To Contact me!"
+  ];
+
+  const ref = useRef();
 
   return (
     <div>
@@ -59,25 +64,60 @@ function ContactMe() {
 
       <div className="download-button">
         <a href={ Resume } target="_blank" rel="noopener noreferrer">
-          my-resume.
+          my-resume
         </a>
       </div>
 
+      <div className="contact-body" >
 
-      <div className="contact-body">
+        <Parallax pages={3} ref={ ref } >
 
-        <div className="card-body">
-          <ContactCard />
-        </div>
+          <ParallaxLayer 
+            offset={0}
+            speed={0}
+            factor={3}
+            style={{
+              // backgroundImage: `url(${Background})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
+          />
 
-        <div className="card-body">
-          <ContactCard />
-        </div>
+          <ParallaxLayer 
+            sticky={{ start: 0.8, end: 2.7 }}
+            offset={0}
+            speed={0.1}
+            factor={3}
+          >
+            <div className="sticky-object">
+              HIHI
+            </div>
+          </ParallaxLayer>
 
-        <div className="card-body">
-          <ContactCard />
-        </div>
 
+          <ParallaxLayer 
+            offset={0.1}
+            speed={0.35}
+            setPosition={0}
+          >
+            <ContactCard />
+          </ParallaxLayer>
+
+          <ParallaxLayer 
+            offset={1}
+            speed={0.25}
+          >
+            <ContactCard />
+          </ParallaxLayer>
+
+          <ParallaxLayer 
+            offset={2}
+            speed={0.9}
+          >
+              <ContactCard />
+          </ParallaxLayer>
+
+        </Parallax>
       </div>
 
     </div>
