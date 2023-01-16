@@ -16,6 +16,10 @@ import UILoader from './helpers/UILoader';
 import LandingPage from './pages/LandingPage';
 import Cursor from './components/Cursor';
 
+import { inject } from '@vercel/analytics';
+
+inject();
+
 
 function App() {
   const [loading, setLoading] = useState(true);
