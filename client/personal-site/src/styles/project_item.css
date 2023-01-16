@@ -18,7 +18,7 @@
     font-size: 16px;
     text-transform: uppercase;
     max-width: 18vw;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .card-desc {

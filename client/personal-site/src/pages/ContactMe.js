@@ -128,7 +128,7 @@ function ContactMe() {
                   <li>Currently a 1B Computer Engineering student at the University of Waterloo</li>
                   <li>Korean-Canadian 🇰🇷 🇨🇦</li>
                   <li>Aspires to launch a tech start up</li>
-                  <li>Enjoys lisitening to music, although singing is a different story...</li>
+                  <li>Enjoys listening to music, although singing is a different story...</li>
                 </ul>
               </div>
             </div>
