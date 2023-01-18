@@ -2,4 +2,7 @@
 
 html {
     font-family: 'Courier Prime', monospace;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
 }

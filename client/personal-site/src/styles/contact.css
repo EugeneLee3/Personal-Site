@@ -36,7 +36,7 @@
     margin: 3vh;
     min-height: 65vh;
     max-height: 65vh;
-    overflow: scroll;
+    overflow: hidden;
     position: relative;
 }
 
