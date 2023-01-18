@@ -36,8 +36,15 @@
     margin: 3vh;
     min-height: 65vh;
     max-height: 65vh;
-    overflow: hidden;
     position: relative;
+}
+
+.parallax-body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.parallax-body::-webkit-scrollbar {
+    display: none;
 }
 
 .sticky-object {

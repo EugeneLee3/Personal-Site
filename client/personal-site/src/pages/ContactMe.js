@@ -72,7 +72,7 @@ function ContactMe() {
 
       <div className="contact-body" >
 
-        <Parallax pages={2.09} ref={ ref } >
+        <Parallax pages={2.09} ref={ ref } className="parallax-body">
 
           <ParallaxLayer 
             offset={0}
