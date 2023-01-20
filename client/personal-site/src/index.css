@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-html {
+html, body {
     font-family: 'Courier Prime', monospace;
+    margin: 0;
+    height: 100%;
+    overflow: hidden
 }
