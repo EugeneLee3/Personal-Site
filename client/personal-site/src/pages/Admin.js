@@ -11,7 +11,10 @@ function Admin() {
 
   return (
     <div>
-        <Login />
+        {/* <Login /> */}
+
+        
+
     </div>
   )
 }
