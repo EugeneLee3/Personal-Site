@@ -6,17 +6,13 @@ import './App.css';
 
 import Projects from './pages/Projects'
 import ContactMe from './pages/ContactMe';
-// import Blog from './pages/Blog'
-// import Login from './pages/Login';
-// import Register from './pages/Register';
 import NotFound from './pages/NotFound';
-// import ProjectDisplay from './pages/ProjectDisplay';
-import Experience from './pages/Experience'
 import UILoader from './helpers/UILoader';
 import LandingPage from './pages/LandingPage';
 import Cursor from './components/Cursor';
 
 import { inject } from '@vercel/analytics';
+import Admin from './pages/Admin';
 
 inject();
 
@@ -48,9 +44,9 @@ function App() {
 
                 <Route exact path="/" element={<UILoader/>}>
                   <Route index element={<LandingPage />} />
-                  <Route exact path="/experience" element={<Experience />} />
                   <Route exact path="/projects" element={<Projects />} />
                   <Route exact path="/contact" element={<ContactMe />} />
+                  <Route exact path="/null" element={<Admin />} />
                   <Route path="*" element={<NotFound />}/>
                 </Route>
                  

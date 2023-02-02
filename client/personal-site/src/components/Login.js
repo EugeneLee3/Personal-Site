@@ -1,15 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-import '../styles/project_display.css'
 
 function Login() {
 
   return (
     <div className="test">
-      <h1>Login</h1>
 
-        <form className="test">
+        <form autocomplete="off" className="test">
           <input id="username"
             required
             type="text"
@@ -29,9 +25,6 @@ function Login() {
         </script>
 
         <button>Login</button>
-        <span>
-          Don't you have an account? <Link to="/register">Register here</Link>
-        </span>
 
     </div>
   )

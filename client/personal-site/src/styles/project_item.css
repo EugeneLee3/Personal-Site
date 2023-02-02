@@ -13,6 +13,10 @@
 .card-item:hover {
     transform: scale(1.03);
 }
+.card-item a{
+    text-decoration: none;
+    color: white;
+}
 
 .card-title {
     font-size: 16px;

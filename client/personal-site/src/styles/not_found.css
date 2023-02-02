@@ -1,0 +1,8 @@
+.error-text {
+    max-width: 70vw;
+    min-width: 70vw;
+    color: white;
+    margin-top: 40vh;
+    text-align: center;
+    font-size: 16px;
+}

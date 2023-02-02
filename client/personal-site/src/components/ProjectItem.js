@@ -9,35 +9,33 @@ function ProjectItem({ name, technologies, desc, gh_link, status, id }) {
   // const navigate = useNavigate();
   return (
     <div className="card-item">
-
-      <div className="card-button">
-        <button>
-          <a href={ gh_link } target="_blank" rel="noopener noreferrer">
+      <a href={ gh_link } target="_blank" rel="noopener noreferrer">
+        <div className="card-button">
+          <button>
             <GithubIcon style={{ color: "white" }} />
-          </a>
-        </button>
-      </div>
-
-        <div className="card-title">{ name }</div>
-
-        <div className="card-desc">
-          <div className="card-desc-status">
-            <span>status: </span>
-
-            <span data-status={status} className="status">
-              { status }
-            </span>
-          </div>
-
-          <div className="card-desc-text">
-          { desc }
-          </div>
-          
-          <div className="card-desc-bottom">
-            technologies: {technologies}
-          </div>
+          </button>
         </div>
 
+          <div className="card-title">{ name }</div>
+
+          <div className="card-desc">
+            <div className="card-desc-status">
+              <span>status: </span>
+
+              <span data-status={status} className="status">
+                { status }
+              </span>
+            </div>
+
+            <div className="card-desc-text">
+            { desc }
+            </div>
+            
+            <div className="card-desc-bottom">
+              technologies: {technologies}
+            </div>
+          </div>
+        </a>
     </div>
   )
 }

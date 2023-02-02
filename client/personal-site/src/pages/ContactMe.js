@@ -19,7 +19,7 @@ import Resume from '../assets/resume.pdf';
 
 function ContactMe() {
   const subtitle_content = [
-    "Feel Free To Contact me!"
+    "Feel Free To Contact Me!"
   ];
 
   const ref = useRef();
@@ -72,49 +72,18 @@ function ContactMe() {
 
       <div className="contact-body" >
 
-        <Parallax pages={2.09} ref={ ref } className="parallax-body">
+        <Parallax pages={1.5} ref={ ref } className="parallax-body">
 
           <ParallaxLayer 
             offset={0}
             speed={0}
-            factor={2.09}
+            factor={2.25}
             style={{
               backgroundImage: `url(${Background})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}
           />
-
-          {/* <ParallaxLayer 
-            sticky={{ start: 0.3, end: 0.4 }}
-            offset={0}
-            speed={0.1}
-          >
-            <div className="sticky-object" style={{ top: '0', left:'15vw'}}>
-              <img src={Fox} height={125} width={125}/>
-            </div>
-          </ParallaxLayer>
-
-          <ParallaxLayer 
-            sticky={{ start: 1, end: 1.1 }}
-            offset={0}
-            speed={0.2}
-          >
-            <div className="sticky-object" style={{ top: '0', right:'20vw'}}>
-              <img src={Goose} height={125} width={125}/>
-            </div>
-          </ParallaxLayer>
-
-          <ParallaxLayer 
-            sticky={{ start: 1.3, end: 1.4 }}
-            offset={0}
-            speed={0.6}
-          >
-            <div className="sticky-object" style={{ bottom: '30vh', left:'15vw'}}>
-              <img src={Error} height={125} width={125}/>
-            </div>
-          </ParallaxLayer> */}
-
 
           <ParallaxLayer 
             offset={0}
@@ -135,7 +104,7 @@ function ContactMe() {
           </ParallaxLayer>
 
           <ParallaxLayer 
-            offset={0.75}
+            offset={0.45}
             speed={0.5}
           >
              <div className="contact-object" style={{left: '3vh', top: '0'}}>
@@ -159,7 +128,7 @@ function ContactMe() {
           </ParallaxLayer >
 
           <ParallaxLayer 
-            offset={1.1}
+            offset={0.5}
             speed={0.15}
           >
             <div className="contact-object" style={{right: '3vh', bottom: '3vh'}}>

@@ -34,8 +34,8 @@
 .contact-body {
     min-width: 70vw;
     margin: 3vh;
-    min-height: 65vh;
-    max-height: 65vh;
+    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
 }
 
@@ -57,8 +57,8 @@
     opacity: 0.85;
     max-width: 30vw;
     min-width: 30vw;
-    min-height: 35vw;
-    margin: 2vh;
+    min-height: 30vh;
+    margin: 10vh;
     position: absolute;
 }
 

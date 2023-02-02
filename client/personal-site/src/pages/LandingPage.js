@@ -13,7 +13,7 @@ function LandingPage() {
     const titles = [
         "Computer Engineering Student @ uWaterloo",
         "Korean Canadian",
-        "Video Game Enjoyer"
+        "Enjoys Video Games"
       ];
 
 
