@@ -15,8 +15,6 @@ import Background from '../assets/background1.png';
 
 import '../styles/contact.css';
 
-import Resume from '../assets/resume.pdf';
-
 function ContactMe() {
   const subtitle_content = [
     "Feel Free To Contact Me!"
@@ -65,7 +63,7 @@ function ContactMe() {
       </div>
 
       <div className="download-button">
-        <a href={ Resume } target="_blank" rel="noopener noreferrer">
+        <a href={ "https://drive.google.com/file/d/12lI8oQLcD8t-LOS3jTWOoT7Qea4hxj1W/view?usp=share_link" } target="_blank" rel="noopener noreferrer">
           my-resume
         </a>
       </div>

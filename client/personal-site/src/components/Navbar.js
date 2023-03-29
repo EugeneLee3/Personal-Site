@@ -30,7 +30,7 @@ function Navbar() {
             <Link to={"/"} class="nav-link">HOME.</Link>
             <Link to={"/projects"} class="nav-link">PROJECTS.</Link>
             <Link to={"/contact"} class="nav-link">CONTACT.</Link>
-            <Link to={"/null"} class="nav-link">null.</Link> 
+            {/* <Link to={"/null"} class="nav-link">null.</Link>  */}
         </nav>
 
     </div>

@@ -12,7 +12,7 @@ import LandingPage from './pages/LandingPage';
 import Cursor from './components/Cursor';
 
 import { inject } from '@vercel/analytics';
-import Admin from './pages/Admin';
+// import Admin from './pages/Admin';
 
 inject();
 
@@ -46,7 +46,7 @@ function App() {
                   <Route index element={<LandingPage />} />
                   <Route exact path="/projects" element={<Projects />} />
                   <Route exact path="/contact" element={<ContactMe />} />
-                  <Route exact path="/null" element={<Admin />} />
+                  {/* <Route exact path="/null" element={<Admin />} /> */}
                   <Route path="*" element={<NotFound />}/>
                 </Route>
                  
