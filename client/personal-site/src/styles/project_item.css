@@ -52,13 +52,17 @@
     margin-bottom: 2.5vh;
 }
 
-.card-button button {
+.card-button {
     margin: 0.75vh;
-    background-color: transparent;
-    border: none;
     position: absolute;
     top: 0.5vh;
     right: 0.5vh;
+}
+
+.card-button button {
+    position: relative;
+    background-color: transparent;
+    border: none;
 }
 
 .card-desc-bottom {

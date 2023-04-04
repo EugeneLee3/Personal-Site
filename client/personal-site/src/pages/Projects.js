@@ -42,7 +42,9 @@ function Projects() {
               status={project.status} 
               desc={project.desc} 
               technologies={project.technologies}
-              gh_link={project.gh_link}/>
+              gh_link={project.gh_link}
+              link={project.link}
+              />
           })}
         </div>
 
